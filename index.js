@@ -24,12 +24,14 @@ function viewCart() {
   
   var message = "In your cart you have ";
   
+  itemsAndPrices = [];
+  
   for (var i=0; i<cart.length; i++) {
     var itemPricePair = cart[i];
     var item = Object.keys(itemPricePair)[0];
     var price = itemPricePair[item];
     
-    message += `${item} at $${price}` + (i === cart.length-1? '.':', ');
+    itemsAndPrices.push(`${item} at $${price}` + (i === cart.length-1? '.':', '));
   }
   console.log(message);
 }
