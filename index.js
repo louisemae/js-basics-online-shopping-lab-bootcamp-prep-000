@@ -47,7 +47,7 @@ function viewCart() {
     for (var k = 0; k<cart.length-1; k++) {
       message += `${itemsAndPrices[k]}, `;
     }
-    message += `and ${itemsAndPrices[cart.length-1]}`;
+    message += `and ${itemsAndPrices[cart.length-1]}.`;
     console.log(message);
   }
 }
