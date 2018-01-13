@@ -34,7 +34,7 @@ function viewCart() {
   
   var message = 'In your cart, you have ';
   if (cart.length === 1) {
-     message += `${itemsAndPrices[0]}.`
+     message += `${itemsAndPrices[0]}.`;
   }
 
   if (cart.length === 2) {
