@@ -24,7 +24,7 @@ function viewCart() {
   
   var message = "In your cart you have ";
   
-  itemsAndPrices = [];
+  var itemsAndPrices = [];
   
   for (var i=0; i<cart.length; i++) {
     var itemPricePair = cart[i];
