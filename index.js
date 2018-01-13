@@ -33,9 +33,8 @@ function viewCart() {
   }
 
   if (cart.length === 2) {
-    itemsAndPrices[0] = `${itemsAndPrices[0]} and `;
-    message = 'In your cart, you have ${items}$'
-    console.log(`In your cart, you have ${itemsAndPrices}.`);
+    message = `In your cart, you have ${itemsAndPrices[0]} and ${itemsAndPrices[1]}.`
+    console.log(message);
   }
   console.log(`In your cart, you have ${itemsAndPrices}.`);
 }
