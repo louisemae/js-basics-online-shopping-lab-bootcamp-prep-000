@@ -9,6 +9,11 @@ function setCart(c) {
   return cart;
 }
 
+/* Function adds an item (type string) to the cart
+ * and assigns it a random price between 1-100. 
+ * Prints to the console that the item has been added,
+ * and returns the updated cart.
+ */
 function addToCart(item) {
   var randomPrice = Math.floor(Math.random()*100);
   var itemAndPrice = { [item]: randomPrice};
