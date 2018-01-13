@@ -22,6 +22,10 @@ function addToCart(item) {
   return cart;
 }
 
+/* Function does not take any argument.
+ * Prints the contents of the cart to the console.
+ * Prints an empty message if the cart is empty.
+ */
 function viewCart() {
   
   if (cart.length === 0) {
@@ -58,6 +62,9 @@ function viewCart() {
   }
 }
 
+/* Function which finds and returns the total 
+ * of the item prices in the cart. 
+ */
 function total() {
   var total = 0;
   for (var i = 0; i < cart.length; i++) {
@@ -65,6 +72,13 @@ function total() {
   }
   return total;
 }
+
+/* Function which takes an item as its argument
+ * and removes it from the cart. 
+ * Prints an error message if the item is not
+ * in the cart. Otherwise, returns the updated 
+ * cart with the desired item removed. 
+ */
 
 function removeFromCart(item) {
   var i = 0;
