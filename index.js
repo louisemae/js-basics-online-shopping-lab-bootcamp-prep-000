@@ -38,7 +38,7 @@ function viewCart() {
   }
 
   if (cart.length === 2) {
-    message += `${itemsAndPrices[0]} and ${itemsAndPrices[1]}.`
+    message += `${itemsAndPrices[0]} and ${itemsAndPrices[1]}.`;
     console.log(message);
   }
   
