@@ -33,7 +33,7 @@ function viewCart() {
   }
 
   if (cart.length === 2) {
-    itemsAndPrices[0] = `${itemsAndPrices[0]}+ and `;
+    itemsAndPrices[0] = `${itemsAndPrices[0]} and `;
   }
   console.log(`In your cart, you have ${itemsAndPrices}.`);
 }
