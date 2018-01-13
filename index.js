@@ -36,7 +36,13 @@ function viewCart() {
     var message = `In your cart, you have ${itemsAndPrices[0]} and ${itemsAndPrices[1]}.`
     console.log(message);
   }
-  console.log(`In your cart, you have ${itemsAndPrices}.`);
+  
+  else{
+    var message = 'In your cart, you have ';
+    for (var i = 0; i<cart.length-1; i++) {
+      message += `${itemsAndPrices[i]}`;
+    }
+  }
 }
 
 function total() {
