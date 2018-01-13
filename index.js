@@ -29,9 +29,9 @@ function viewCart() {
     var item = Object.keys(itemPricePair)[0];
     var price = itemPricePair[item];
     
-    itemsAndPrices.push(`${item} at $${price}` + (i === cart.length-1? '.':', '));
+    itemsAndPrices.push(`${item} at $${price}` + (i === cart.length-1? '':', '));
   }
-  console.log(`In your cart, you have ${itemsAndPrices}`);
+  console.log(`In your cart, you have ${itemsAndPrices}.`);
 }
 
 function total() {
