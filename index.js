@@ -49,6 +49,7 @@ function viewCart() {
       message += `${itemsAndPrices[k]}, `;
     }
     message += `and ${itemsAndPrices[k+1]}`;
+    console.log(message);
   }
 }
 
