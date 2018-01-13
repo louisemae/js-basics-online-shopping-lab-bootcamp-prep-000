@@ -44,7 +44,6 @@ function viewCart() {
   }
   
   else{
-    message = 'In your cart, you have ';
     for (var k = 0; k<cart.length-1; k++) {
       message += `${itemsAndPrices[k]}, `;
     }
