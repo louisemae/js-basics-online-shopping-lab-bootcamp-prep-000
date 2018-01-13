@@ -31,9 +31,9 @@ function viewCart() {
     var item = Object.keys(itemPricePair)[0];
     var price = itemPricePair[item];
     
-    message += `${item} at $${price}` + (i === cart.length-1? '.':', ');
+    itemsAndPrices.push(`${item} at $${price}` + (i === cart.length-1? '.':', '));
   }
-  console.log(${message});
+  console.log(${itemsAndPrices});
 }
 
 function total() {
