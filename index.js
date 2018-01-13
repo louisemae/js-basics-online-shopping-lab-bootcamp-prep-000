@@ -33,7 +33,7 @@ function viewCart() {
     
     itemsAndPrices.push(`${item} at $${price}` + (i === cart.length-1? '.':', '));
   }
-  console.log(${itemsAndPrices});
+  console.log(`${itemsAndPrices}`);
 }
 
 function total() {
