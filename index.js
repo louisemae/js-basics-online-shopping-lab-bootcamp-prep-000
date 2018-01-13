@@ -40,8 +40,9 @@ function viewCart() {
   else{
     var message = 'In your cart, you have ';
     for (var i = 0; i<cart.length-1; i++) {
-      message += `${itemsAndPrices[i]}`;
+      message += `${itemsAndPrices[i]}, `;
     }
+    message += `and ${itemsAndPrices[cart.length-1]}`;
   }
 }
 
